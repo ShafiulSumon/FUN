@@ -1,3 +1,5 @@
+// Subset_generator code:
+
 #include <iostream>
 #include <cstdio>
 #include <cstring>
@@ -39,26 +41,26 @@ using namespace std;
 #define ps(ch)               printf("%s",ch)
 #define loop(var,s,f,i)      for(var=s; var<=f; var+=i)
 
-int arr[]={1,3,8};
+int arr[]={1,3,5};
 int len_arr=3;
 stack<int> stk;
 
 void sub_gen(int i){
 	int x,y;
-	vector<int> patil;
+	vector<int> basket;
 	if(len_arr==i){
 		if(!stk.size()) return; 
 		while(stk.size()){
-			patil.pb(stk.top());
+			basket.pb(stk.top());
 			stk.pop();
 		}
-		x=patil.size();
+		x=basket.size();
 		for(y=x-1; y>=0; y--){
-			printf("%d ",patil[y]);
-			stk.push(patil[y]);
+			printf("%d ",basket[y]);
+			stk.push(basket[y]);
 		}
 		nl;
-		patil.clear();
+		basket.clear();
 		return;
 	}
 	sub_gen(i+1);
@@ -73,3 +75,4 @@ int main()
 	sub_gen(0);
 	return 0;
 }
+
