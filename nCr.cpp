@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cstdio>
+
 #define mod 1000003
+
 using namespace std;
 
 
