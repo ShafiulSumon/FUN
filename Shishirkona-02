@@ -1,0 +1,7 @@
+n টি consecutive number এর গুণফল কে n দ্বারা ভাগ করা যায়। 
+(discrete math) if a|b, then a|b*c;
+
+তাহলে, n টি consecutive number এর মধ্যে একটি n এর গুণিতক পাবই। ধরি সংখ্যাটি b।  
+যেটা কিনা n দ্বারা divisible হবে,অতএব n|b.
+তাহলে বাকি (n-1) টি সংখ্যার গুণফল যদি c হয়,তাহলে n টি consecutive number এর গুলফল হবে b*c.
+আর যেহেতু n|b, সেহেতু n|(b*c).
