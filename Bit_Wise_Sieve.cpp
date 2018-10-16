@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#define N 100000008
+#define N 100000008  /// maximum value can be stored
 
 using namespace std;
 
