@@ -1,4 +1,4 @@
-// problem link: https://www.spoj.com/problems/DQUERY/
+/// problem link: https://www.spoj.com/problems/DQUERY/
 
 #include <bits/stdc++.h>
 
