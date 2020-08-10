@@ -1,0 +1,8 @@
+(a+b)%mod = ( (a%mod) + (b%mod) ) % mod;
+
+(-a)%mod = ( -a+(multiple)*mod) ) % mod = (-a+mod) % mod;
+
+(a-b)%mod = ( a-b+mod) % mod;
+
+(a*b)%mod = ( (a%mod) * (b%mod) ) % mod;
+
