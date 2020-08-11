@@ -1,0 +1,17 @@
+যদি তোমাকে একটা অ্যারে দেওয়া হয় যেখানে শুধুমাত্র একটা নাম্বার বাদের বাকি সবগুলা নাম্বার ২ টা করে থাকবে, তাহলে সেই একটা নাম্বার কিভাবে বের করবে?
+
+For example:
+    int arr[] = {3,3,4,4,5,2,2};
+    
+    output: 5.
+  
+  
+  Solution: (best solution)
+    (Concept): XOR(^)
+              * 0 ^ a = a 
+              * a ^ a = 0
+              
+     so, (3^3^4^4^5^2^2) = 5. 
+     
+     
+Problem Link : https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3283/
