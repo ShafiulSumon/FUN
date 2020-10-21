@@ -1,0 +1,14 @@
+// windows is unable to complete formate the pendrive.
+
+solution:
+  1. press windows key + R
+  2. type 'diskpart'
+  3. type 'list disk'
+  4. then type 'select disk 1' (here 1 is my pendrive)
+  5. type 'clean'
+  6. type 'create partition primary'
+  7. type 'active'
+  8. type 'select partition 1'
+  9. type 'format fs=fat32'
+  done.
+  
