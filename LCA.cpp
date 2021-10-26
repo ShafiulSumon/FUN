@@ -49,9 +49,12 @@ void BFS(){
     }
 }
 
+
+// SPT[i][j] = x;
+// 'x' is the 2^j -th parent of node 'i'
 void sparse_table(int node){
     for(int i=1; i<=node; i++){
-        SPT[i][0] = parent[i]; // 0-th parent of i-th node
+        SPT[i][0] = parent[i]; // 2^0-th parent of i-th node
     }
     for(int j=1; (1<<j)<=node; j++){
         for(int i = 1; i<=node; i++){
@@ -63,13 +66,18 @@ void sparse_table(int node){
 
 
 void Precal(int node){
-    BFS();
-    sparse_table(node);
+    // for leveling the nodes
+    BFS(); 
+
+    // store the parent's of every node 
+    // in 2's power
+    sparse_table(node); 
 }
 
 
 int find_LCA(int x, int y, int node){
     if(level[x]<level[y]) swap(x,y); // now level of x is bigger or equal
+    
     for(int i = log2(node); i>=0; i--){
         if(level[x]-(1<<i) >= level[y]){
             x = SPT[x][i];
@@ -77,18 +85,18 @@ int find_LCA(int x, int y, int node){
     }
     // now x and y are in same level
 
-    if(x==y) return x;
+    if(x==y) return x; // overlapping node, so that's the LCA
 
     for(int i = log2(node); i>=0; i--){
-        if(parent[x]!=-1 and SPT[x][i]!=SPT[y][i]){
+        if(SPT[x][i]!=-1 and SPT[x][i]!=SPT[y][i]){
             x = SPT[x][i], y = SPT[y][i];
         }
     }
-    return parent[x];
+    return SPT[x][0];
 }
 
 int main()
-{	
+{   
     int cas = 1;
     int node,m,v,x,y,query;
     TEST{
@@ -113,6 +121,6 @@ int main()
             pf("%d\n",ans);
         }
         rep(i,1,node+1) vec[i].clear();
-    }	
-	return 0;
+    }   
+    return 0;
 }
