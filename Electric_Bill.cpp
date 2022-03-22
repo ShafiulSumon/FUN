@@ -1,3 +1,21 @@
+///double(8): bijoy+jahangir, 
+///        komol_vai+mobin_vai
+///        noor+salauddin
+///        sojib+tanvir
+
+///single(13): sumon,bappy,monir_vai,nazmul_vai,
+///        sakib,morsa,himel,asad,mohabbat,
+///        imran,hridoy,amit,jibon.
+/// total border: 21.
+
+/// laptop(10): sumon,bijoy,bappy,komol_vai,
+///          monir_vai,nazmul_vai,sakib,
+///          sojib,mohabbat,noor.
+
+///desktop(1): morsa.
+
+///cooker(2): himel,asad.
+
 #include <bits/stdc++.h>
 
 using namespace std;
