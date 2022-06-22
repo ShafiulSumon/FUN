@@ -1,20 +1,21 @@
-///double(8): bijoy+jahangir, 
-///        komol_vai+mobin_vai
+///double(7): bijoy+jahangir, 
+///        mobin_vai,
 ///        noor+salauddin
 ///        sojib+tanvir
 
-///single(13): sumon,bappy,monir_vai,nazmul_vai,
+///single(15): sumon,bappy,monir_vai,nazmul_vai,
 ///        sakib,morsa,himel,asad,mohabbat,
-///        imran,hridoy,amit,jibon.
-/// total border: 21.
+///        imran,hridoy,amit,jibon,raihan,parvej.
+/// total border: 22.
 
-/// laptop(10): sumon,bijoy,bappy,komol_vai,
-///          monir_vai,nazmul_vai,sakib,
-///          sojib,mohabbat,noor.
+/// laptop(8): sumon,bijoy,mubin_vai,
+///          monir_vai,nazmul_vai,
+///          noor,sojib,mohabbat.
 
-///desktop(1): morsa.
+///desktop(3): morsa,bappy,sakib.
 
-///cooker(2): himel,asad.
+///cooker(2): asad, mohabbat
+///iron(2): jahangir, amit
 
 #include <bits/stdc++.h>
 
